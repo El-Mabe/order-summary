@@ -1,0 +1,232 @@
+:root {
+  --mobile: 375px;
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: var(--pale-blue);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+section > div {
+  position: absolute;
+  top: 20%;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card p {
+  margin: 20px;
+  text-align: center;
+  color: var(--Desaturated-blue);
+}
+
+.card h1 {
+  text-align: center;
+  color: var(--Dark-blue);
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  background-color: var(--Very-pale-blue);
+  border-radius: 20px;
+}
+
+.info figure {
+  margin: auto;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.info > div img {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+.info > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info a {
+  color: var(--bright-blue);
+  font-size: medium;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.info a:hover {
+  text-decoration: none;
+  color: hsl(245, 73%, 60%);
+}
+
+.info div p:nth-child(1) {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: var(--Dark-blue);
+  font-size: medium;
+}
+.info div p:nth-child(2) {
+  font-weight: bold;
+  margin-top: 0;
+  color: var(--Desaturated-blue);
+  font-size: medium;
+}
+.actions {
+  display: block;
+}
+
+.actions div {
+  width: 100%;
+}
+
+.primary-button {
+  font-weight: bold;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+
+  border: 0px solid;
+  background-color: var(--bright-blue);
+  color: white;
+  margin-top: 20px;
+  font-size: 15;
+}
+
+.primary-button:hover {
+  cursor: pointer;
+  background-color: hsl(245, 70%, 65%);
+}
+
+.secondary-button {
+  width: 100%;
+  background-color: white;
+  margin-top: 20px;
+  border: 0px solid;
+  color: var(--Desaturated-blue);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.secondary-button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+@media (max-width: 375px) {
+  
+    body {
+    font-family: "Red Hat Display", sans-serif;
+    background: var(--pale-blue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section > div {
+    position: absolute;
+    top: 10%;
+  }
+
+  .card {
+    width: 90%;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card > img {
+
+      max-width: 100%;
+      max-height: 100%;
+  }
+
+  .info div p:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: var(--Dark-blue);
+    font-size: small;
+  }
+  .info div p:nth-child(2) {
+    font-weight: bold;
+    margin-top: 0;
+    color: var(--Desaturated-blue);
+    font-size: small;
+  }
+
+  .info a {
+    color: var(--bright-blue);
+    font-size: small;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .card h1 {
+    text-align: center;
+    color: var(--Dark-blue);
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: large;
+  }
+
+  .card p {
+    margin: 20px;
+    text-align: center;
+    color: var(--Desaturated-blue);
+  }
+
+  .info > div img {
+    text-align: center;
+    width: 45px;
+    height: 45px;
+  }
+
+  .secondary-button {
+      margin-top: 15px;
+  }
+
+}
